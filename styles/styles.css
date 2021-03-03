@@ -1,0 +1,74 @@
+*{
+    margin-left: 10px;
+    padding: 0;
+    border: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+body{
+  background-color: peru;
+  color: white;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  
+}
+
+h1{
+  color: darkred;
+  font-size: 25px;
+}
+
+#actualitzar{
+  display: none;
+}
+
+.ressaltat{
+  color: blue;
+  border-bottom: 1px dotted blue;
+}
+.button {
+  margin-left: 30px;
+  padding: 10px 35px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #a80b2d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 3px 3px #999;
+}
+
+.button:hover {
+  background-color: #cb516b;
+  outline: gray;
+  box-shadow: 8px 8px #999;
+}
+
+.button:active {
+  background-color: lightgray;
+  box-shadow: 3px 3px #666;
+  transform: translateY(3px);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: whitesmoke;
+  color: blue;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px 5px;
+  font-size: 10px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

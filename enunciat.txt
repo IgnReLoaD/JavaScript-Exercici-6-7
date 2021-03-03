@@ -1,0 +1,8 @@
+
+    Exercici-6: Reemplaçar paraules i lletres en un string (blau x verd, i o per u)
+    Exercici-7: Llistats, mostrar per pantalla cada element i la posició
+
+despres
+
+    Exercici-8: Calculadora
+    
