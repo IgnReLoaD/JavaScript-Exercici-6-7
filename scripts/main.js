@@ -51,5 +51,36 @@ function substLletra(){
 }
 
 function llistes(){
-    
+    // let llistat = new Array();  ... es pot declarar amb 'new' però carrega en memoria masses funcions relacionades amb Objectes
+	let llistat1 = ['taula', 'cadira', 'ordinador', 'llibreta'];
+    let resultat = "";
+
+    for (i=0; i < llistat1.length; i++){        
+        resultat += " L'objecte " + llistat1[i] + " està en la posició " + i + ". <br>";
+    }
+    console.log(resultat);
+    // accedim al DOM una sola vegada, sempre intentar de interactuar el minim possible
+    document.getElementById("mostrarDatos").innerHTML = resultat;
+
+    // ampliació 1 ... llista demanant elements al usuari per Prompt
+    let element  = "";
+	let llistat2 = [];    
+    resultat     = "";
+
+    for (i=0; i < 4; i++){
+        element  = prompt("Escriu un element ("+i+" de 4): ");
+        llistat2.push(element);
+        resultat += " L'objecte " + llistat2[i] + " està en la posició " + i + ". <br>";
+    }
+    // tornem a accedir al DOM, perquè és un sub-exercici apart
+    document.getElementById("mostrarDatos2").innerHTML = "Ampliació, mostrar un llistat demanat al usuari: <br><br> " + resultat;
+
+    // ampliació 2 ... llista mostrada al inrevés
+    llistat2.reverse();
+    resultat = "";
+    for (i=0; i < 4; i++){                
+        resultat += " L'objecte " + llistat2[i] + " està en la posició " + i + ". <br>";
+    }
+    // tornem a accedir al DOM, perquè és un sub-exercici apart
+    document.getElementById("mostrarDatos3").innerHTML = "Ampliació, mostrar llistat usuari al REVES: <br><br> " + resultat;
 }
